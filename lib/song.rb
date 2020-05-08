@@ -35,7 +35,7 @@ class Song
   
   def self.artist_count
     artist_count = {}
-    @@artists.each {|i| artist_count[i] =+ 1}
+    @@artists.map {|i| artist_count[i] =+ 1}
     artist_count
   end
   
